@@ -14,17 +14,17 @@ The primary evaluation uses strict T0 random-entry interpolation. For every oute
 
 The primary benchmark contains:
 
-* CCLE
-* CGP ERK-AUC
-* CGP ERK-IC50
-* CGP PI3K-AUC
-* CGP PI3K-IC50
+- CCLE
+- CGP ERK-AUC
+- CGP ERK-IC50
+- CGP PI3K-AUC
+- CGP PI3K-IC50
 
 Each task is evaluated using:
 
-* 10 random seeds
-* 10 folds per seed
-* identical held-out masks across compared methods
+- 10 random seeds
+- 10 folds per seed
+- identical held-out masks across compared methods
 
 ## Repository structure
 
@@ -68,15 +68,15 @@ MCLRP-MFMR/
 
 This repository contains:
 
-* MFMR source code
-* frozen model configurations
-* preprocessing and evaluation code
-* exact 10-seed × 10-fold primary evaluation assignments
-* statistical-analysis scripts
-* plotting scripts
-* dataset manifests
-* data-reconstruction documentation
-* integrity and reproducibility documentation
+- MFMR source code
+- frozen model configurations
+- preprocessing and evaluation code
+- exact 10-seed × 10-fold primary evaluation assignments
+- statistical-analysis scripts
+- plotting scripts
+- dataset manifests
+- data-reconstruction documentation
+- integrity and reproducibility documentation
 
 The frozen split files under `splits/primary_10x10/` are retained in the repository so that the exact evaluation partitions used in the manuscript can be reconstructed.
 
@@ -86,14 +86,14 @@ The complete experimental result archive is distributed separately rather than t
 
 The result archive contains materials such as:
 
-* primary final-lock predictions
-* seed-level and fold-level metrics
-* protocol-audit files
-* paired statistical tests
-* reconstructed MCLRP ablation outputs
-* out-of-fold prediction matrices
-* bootstrap results
-* derived tables used in the manuscript and supplementary material
+- primary final-lock predictions
+- seed-level and fold-level metrics
+- protocol-audit files
+- paired statistical tests
+- reconstructed MCLRP ablation outputs
+- out-of-fold prediction matrices
+- bootstrap results
+- derived tables used in the manuscript and supplementary material
 
 The archived results will be provided through the corresponding GitHub Release and/or Zenodo record.
 
@@ -109,10 +109,10 @@ The upstream pharmacogenomic datasets are not redistributed in this repository.
 
 The study uses data derived from resources including:
 
-* Cancer Cell Line Encyclopedia (CCLE)
-* Genomics of Drug Sensitivity in Cancer (GDSC)
-* CGP / legacy drug-response benchmark resources
-* Cell Model Passports-derived molecular features where applicable
+- Cancer Cell Line Encyclopedia (CCLE)
+- Genomics of Drug Sensitivity in Cancer (GDSC)
+- CGP / legacy drug-response benchmark resources
+- Cell Model Passports-derived molecular features where applicable
 
 Users should obtain the upstream datasets from their original providers under the applicable access and licensing terms.
 
@@ -233,12 +233,12 @@ The project was designed around an explicit information boundary.
 
 In particular, held-out responses are excluded before fold-dependent operations including:
 
-* response summaries
-* target-conditioned gene selection
-* scaling
-* dimensionality reduction
-* iterative imputation
-* regression fitting
+- response summaries
+- target-conditioned gene selection
+- scaling
+- dimensionality reduction
+- iterative imputation
+- regression fitting
 
 The same outer masks are used when methods are compared within a dataset and seed.
 
@@ -256,11 +256,11 @@ CITATION.cff
 
 Authors:
 
-* Shengrui Han
-* Zimo Li
-* Zhaorui Cui
-* Chunxin Yuan
-* Jialiang Yang
+- Shengrui Han
+- Zimo Li
+- Zhaorui Cui
+- Chunxin Yuan
+- Jialiang Yang
 
 ## Contact
 

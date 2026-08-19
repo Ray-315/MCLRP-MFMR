@@ -3,14 +3,10 @@
 # Git ignore rules for the public reproducibility repository
 # ============================================================
 
-
-# ------------------------------------------------------------
-# 1. Python cache / compiled files
-# ------------------------------------------------------------
+# Python cache / compiled files
 __pycache__/
 *.py[cod]
 *$py.class
-
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -18,20 +14,14 @@ __pycache__/
 coverage.xml
 htmlcov/
 
-
-# ------------------------------------------------------------
-# 2. Virtual environments
-# ------------------------------------------------------------
+# Virtual environments
 .venv/
 venv/
 env/
 ENV/
 conda-env/
 
-
-# ------------------------------------------------------------
-# 3. IDE / editor files
-# ------------------------------------------------------------
+# IDE / editor files
 .vscode/
 .idea/
 *.swp
@@ -40,52 +30,34 @@ conda-env/
 .DS_Store
 Thumbs.db
 
-
-# ------------------------------------------------------------
-# 4. Build / packaging artifacts
-# ------------------------------------------------------------
+# Build / packaging artifacts
 build/
 dist/
 *.egg-info/
 .eggs/
 
-
-# ------------------------------------------------------------
-# 5. Jupyter temporary files
-# ------------------------------------------------------------
+# Jupyter temporary files
 .ipynb_checkpoints/
 
-
-# ------------------------------------------------------------
-# 6. Logs and temporary files
-# ------------------------------------------------------------
+# Logs and temporary files
 *.log
 *.tmp
 *.temp
 *.bak
-
 logs/
 tmp/
 temp/
 
-
-# ------------------------------------------------------------
-# 7. Experimental results
-#
+# Experimental results
 # Complete archived results are distributed separately through
 # a GitHub Release / Zenodo archive rather than tracked in Git.
-# ------------------------------------------------------------
 results/
 outputs/
 runs/
 
-
-# ------------------------------------------------------------
-# 8. Upstream / local pharmacogenomic datasets
-#
+# Upstream / local pharmacogenomic datasets
 # Dataset manifests and documentation under data/ ARE tracked.
 # Actual upstream or locally reconstructed matrices ARE NOT.
-# ------------------------------------------------------------
 data/raw/
 data/processed/
 data/local/
@@ -110,27 +82,15 @@ data/**/CGP_X.npz
 data/**/Mutation.xlsx
 data/**/*Mutation*.csv
 
-
-# ------------------------------------------------------------
-# 9. Local paths / secrets / machine-specific configuration
-# ------------------------------------------------------------
+# Local paths / secrets / machine-specific configuration
 .env
 .env.*
 !.env.example
-
 local_config.*
 private_config.*
 secrets.*
 credentials.*
 
-
-# ------------------------------------------------------------
-# IMPORTANT
-#
+# IMPORTANT:
 # Do NOT globally ignore *.npz.
-# The repository intentionally tracks frozen split files under:
-#
-#   splits/primary_10x10/
-#
-# These files are necessary for exact evaluation reproduction.
-# ------------------------------------------------------------
+# Frozen split files under splits/primary_10x10/ are intentionally tracked.
