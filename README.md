@@ -95,9 +95,9 @@ The result archive contains materials such as:
 - bootstrap results
 - derived tables used in the manuscript and supplementary material
 
-The archived results will be provided through the corresponding GitHub Release and/or Zenodo record.
+The archived results are provided through the corresponding GitHub Release and/or Zenodo record.
 
-**Result archive:** to be added upon release.
+**Result archive:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.0
 
 **Zenodo DOI:** to be added after archival.
 
