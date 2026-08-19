@@ -1,0 +1,40 @@
+{
+  "freeze_name": "gdsc_legacy_mixeddate_panel",
+  "source_expression": "data/raw/GDSC/rnaseq_merged_rsem_tpm_20250922.csv",
+  "source_response": "data/raw/GDSC/GDSC2_fitted_dose_response_27Oct23.xlsx",
+  "source_gene_map": "data/raw/GDSC/gene_identifiers_20241212.csv",
+  "source_mutation": "data/raw/GDSC/GDSC_Mutation_CNV_CellModelPassports.csv",
+  "notes": [
+    "Legacy GDSC benchmark panel rebuilt into standardized bundle format for compatibility with current loaders.",
+    "Drug subsets are restored from the pre-rebuild benchmark outputs: ERK=13 drugs, PI3K=26 drugs.",
+    "Mutation features remain the legacy Cell Model Passports-derived table used by the old benchmark."
+  ],
+  "ERK_AUC": {
+    "pathway": "ERK MAPK signaling",
+    "metric": "AUC",
+    "num_drugs": 13,
+    "num_observed": 11607,
+    "num_cells": 943
+  },
+  "ERK_IC50": {
+    "pathway": "ERK MAPK signaling",
+    "metric": "IC50",
+    "num_drugs": 13,
+    "num_observed": 11607,
+    "num_cells": 943
+  },
+  "PI3K_AUC": {
+    "pathway": "PI3K/MTOR signaling",
+    "metric": "AUC",
+    "num_drugs": 26,
+    "num_observed": 21491,
+    "num_cells": 943
+  },
+  "PI3K_IC50": {
+    "pathway": "PI3K/MTOR signaling",
+    "metric": "IC50",
+    "num_drugs": 26,
+    "num_observed": 21491,
+    "num_cells": 943
+  }
+}

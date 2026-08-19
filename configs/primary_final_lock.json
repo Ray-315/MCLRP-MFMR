@@ -1,0 +1,23 @@
+{
+  "protocol": "strict_t0_random_entry_masking_mfmr_v1",
+  "datasets": ["CCLE", "ERKAUC30", "ERKIC50", "PI3KAUC", "PI3KIC50"],
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "num_folds": 10,
+  "methods": [
+    "global_mean", "row_col_mean", "original_mclrp", "original_mclrp_calibrated",
+    "imputer_only", "ridge_only", "mfmr_base", "mfmr_no_expression",
+    "mfmr_no_row_stats", "mfmr_no_imputer", "mfmr_no_ridge"
+  ],
+  "mfmr": {
+    "imputer_gene_limit": 2000,
+    "imputer_components": 12,
+    "imputer_max_iter": 3,
+    "ridge_gene_limit": 2500,
+    "ridge_components": 16,
+    "ridge_alpha": 10.0,
+    "fusion_weights": [0.5, 0.5],
+    "minimum_visible_target_rows": 5
+  },
+  "mclrp": {"gene_limit": 1000, "beta": 1.0, "rho": 1.0, "iter_num": 100, "itol": 0.0, "tk": 0.03},
+  "source_of_truth": "results/primary_final_lock/FINAL_RESULT_MANIFEST.json"
+}

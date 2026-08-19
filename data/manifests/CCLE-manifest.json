@@ -1,0 +1,15 @@
+{
+  "freeze_name": "ccle_legacy_cclex_mmnormal",
+  "source_expression": "data/raw/CCLE/CCLE_X.npz",
+  "source_response": "data/raw/CCLE/MMnormal.npz",
+  "source_mutation": "data/raw/CCLE/CCLE_Mutation_19Q1_aligned_to_CCLE_X.csv",
+  "num_cells": 491,
+  "num_genes": 18900,
+  "num_drugs": 24,
+  "num_observed": 11360,
+  "notes": [
+    "Legacy CCLE benchmark bundle rebuilt into standardized format for compatibility with current loaders.",
+    "Expression and response come from CCLE_X.npz and MMnormal.npz.",
+    "Mutation features come from CCLE_Mutation_19Q1_aligned_to_CCLE_X.csv and preserve the recovered 491-row legacy order."
+  ]
+}

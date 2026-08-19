@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated MCLRP-MFMR manuscript."
+title: "MCLRP-MFMR: Fold-Specific Low-Rank Completion and Transcriptomic Fusion for Anticancer Drug-Response Interpolation"
+type: software
+version: 1.0.0
+repository-code: "https://github.com/Ray-315/MCLRP-MFMR"
+authors:
+  - family-names: Han
+    given-names: Shengrui
+    orcid: "https://orcid.org/0009-0005-6771-9575"
+  - family-names: Li
+    given-names: Zimo
+    orcid: "https://orcid.org/0009-0001-2679-5978"
+  - family-names: Cui
+    given-names: Zhaorui
+    orcid: "https://orcid.org/0009-0002-8878-6409"
+  - family-names: Yuan
+    given-names: Chunxin
+    orcid: "https://orcid.org/0009-0001-8859-4995"
+  - family-names: Yang
+    given-names: Jialiang
+    orcid: "https://orcid.org/0000-0003-4689-8672"
+keywords:
+  - anticancer drug response
+  - matrix completion
+  - transcriptomics
+  - cancer cell lines
+  - random-entry interpolation
+  - leakage-aware evaluation

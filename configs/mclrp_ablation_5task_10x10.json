@@ -1,0 +1,124 @@
+{
+  "status": "complete",
+  "protocol_version": "reviewer_mclrp_ablation_strict_trainonly_v1",
+  "config_hash": "1a73d110f7f2ae17e62e297a068d359c7a70d2fdc8a05fa6eac6610638cf570a",
+  "config": {
+    "protocol_version": "reviewer_mclrp_ablation_strict_trainonly_v1",
+    "datasets": [
+      "CCLE",
+      "GDSC-ERK_AUC",
+      "GDSC-ERK_IC50",
+      "GDSC-PI3K_AUC",
+      "GDSC-PI3K_IC50"
+    ],
+    "models": [
+      "MCLRP",
+      "MCLRP_NoPCA_reconstructed",
+      "MCLRP_NoTrace_reconstructed"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "folds": 10,
+    "fold_limit": null,
+    "save_oof": true,
+    "solver": {
+      "beta": 1.0,
+      "rho": 1.0,
+      "iter_num": 100,
+      "itol": 0.0,
+      "tk": 0.03,
+      "gene_limit": 1000,
+      "epsilon_scale": 1.0
+    },
+    "delta_definition": "variant_minus_full_mclrp"
+  },
+  "environment": {
+    "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:37:03) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "python",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "omp_num_threads": "16",
+    "mkl_num_threads": "16"
+  },
+  "datasets": [
+    {
+      "dataset": "CCLE",
+      "source_path": "data/standardized/CCLE/bundle.npz",
+      "source_file_sha256": "b3054507188d708e9e495ce468154db09828ced0feb40995780aaa4e9355def8",
+      "x_sha256": "6d3083ca1b70c009d34e2000007755ed85896d060d2aadfbb6e9e86c00781333",
+      "m_sha256": "dc2fae0b52734ec1c7cae65441b4b5ab656371099f2ac86491fe72b852727a90",
+      "dataset_hash": "b91d55d12f21b47ae5dd9f8104c6af7266a4fe5118db2567494948a632f353a5",
+      "cells": 491,
+      "drugs": 24,
+      "genes": 18900,
+      "observed": 11360
+    },
+    {
+      "dataset": "GDSC-ERK_AUC",
+      "source_path": "data/standardized/GDSC/ERK_AUC_bundle.npz",
+      "source_file_sha256": "045ba5a38b8017d030357716474523bd8778e681ebdd2124a09d872a84bf2c4c",
+      "x_sha256": "f1ee41a775424ff0e84c8e3da01a11b6f512f6cc5b51ccfed6fbf310f666eeea",
+      "m_sha256": "23313d334d6a19211515ac10df6972093a2ee704d2c160752e43a3206d66e1e3",
+      "dataset_hash": "dc34806d80a1eb534ad1dc32110fe41f266710db1a6abf6bd1b454d182948090",
+      "cells": 943,
+      "drugs": 13,
+      "genes": 41145,
+      "observed": 11607
+    },
+    {
+      "dataset": "GDSC-ERK_IC50",
+      "source_path": "data/standardized/GDSC/ERK_IC50_bundle.npz",
+      "source_file_sha256": "e4c71cafa63c7ff6f4d91089aa2e6650cacbc2ba5fdcf6b6447c20f28bf5e593",
+      "x_sha256": "f1ee41a775424ff0e84c8e3da01a11b6f512f6cc5b51ccfed6fbf310f666eeea",
+      "m_sha256": "12f0b9a326b37802457c67bc8140d7b3c57edafe8ff700a055d08891e3c38373",
+      "dataset_hash": "1d236d15a8d925d2b85bd19800bbcebe62f8b39e41343f35811e320b183ed066",
+      "cells": 943,
+      "drugs": 13,
+      "genes": 41145,
+      "observed": 11607
+    },
+    {
+      "dataset": "GDSC-PI3K_AUC",
+      "source_path": "data/standardized/GDSC/PI3K_AUC_bundle.npz",
+      "source_file_sha256": "84ddbde0be72055fb6702d8444b4550874d826d78145c0cef9d4c1bb59ee5ec4",
+      "x_sha256": "93b60c8f6db1afe52c5c0c10ea90ff3f433aec39b6ea73b825e7daf903104925",
+      "m_sha256": "9a683fe5276831a1718cab6b8210bf4932cc5b1a2c83ccd597a8c804e156fd59",
+      "dataset_hash": "647589b2802b06e5a53624a83778968a127f6236fb9ea00b79cc0e92d5598dee",
+      "cells": 943,
+      "drugs": 26,
+      "genes": 41145,
+      "observed": 21491
+    },
+    {
+      "dataset": "GDSC-PI3K_IC50",
+      "source_path": "data/standardized/GDSC/PI3K_IC50_bundle.npz",
+      "source_file_sha256": "35e2220ad6fbb57342295835ef31049ea80f37ab5b1e484ab0e5b0012fea83dd",
+      "x_sha256": "93b60c8f6db1afe52c5c0c10ea90ff3f433aec39b6ea73b825e7daf903104925",
+      "m_sha256": "e4b2e0d59e15ffba869925925514cb7f7c2477d21790fb47bfdfecba7a4565d8",
+      "dataset_hash": "98360d01dacc62c844e4fdbae6a2db865ac9790a7cfcd3fda9668ac23c0d9dee",
+      "cells": 943,
+      "drugs": 26,
+      "genes": 41145,
+      "observed": 21491
+    }
+  ],
+  "completed_seed_model_units": 150,
+  "expected_seed_model_units": 150,
+  "completed_fold_model_units": 1500,
+  "expected_fold_model_units": 1500,
+  "oof_prediction_files": 150,
+  "total_runtime_sec": 503.356586933136,
+  "generated_at_epoch_sec": 1785504429.4214237
+}
