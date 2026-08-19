@@ -98,11 +98,11 @@ The result archive contains materials such as:
 - bootstrap results
 - derived tables used in the manuscript and supplementary material
 
-The archived results are provided through the corresponding GitHub Release and/or Zenodo record.
+The archived results are provided through the corresponding GitHub Release, while the software release is permanently archived at Zenodo.
 
-**Result archive:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.0
+**Result archive:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.0.1
 
-**Zenodo DOI:** to be added after archival.
+**Archived software version:** https://doi.org/10.5281/zenodo.22008296
 
 This separation keeps the Git repository focused on source code and reproducibility metadata while allowing the complete frozen numerical output to remain publicly accessible.
 
