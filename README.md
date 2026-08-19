@@ -31,6 +31,7 @@ Each task is evaluated using:
 ```text
 MCLRP-MFMR/
 ├── CITATION.cff
+├── LICENSE
 ├── README.md
 ├── THIRD_PARTY.md
 ├── PUBLIC_RELEASE_NOTES.md
@@ -270,6 +271,6 @@ Correspondence regarding the manuscript may also be directed to the correspondin
 
 ## License
 
-A software licence will be added before the final archived public release.
+Original MCLRP-MFMR code and documentation in this repository are released under the **MIT License**, unless otherwise noted. See `LICENSE`.
 
-Third-party software and upstream datasets remain subject to their respective licences and terms of use.
+Upstream datasets, third-party software, and excluded upstream MCLRP materials remain subject to their respective licences and terms of use and are not covered by this repository's MIT License.
