@@ -23,5 +23,7 @@ The upstream MCLRP source is not redistributed because a sufficiently clear
 software redistribution licence was not identified for the source used during
 preparation of this release. See `THIRD_PARTY.md`.
 
-A software licence for the authors' MFMR implementation still requires final
-author approval; see `LICENSE_PENDING.md`.
+Original MCLRP-MFMR code and documentation in this repository are released
+under the MIT License unless otherwise noted. Upstream datasets, third-party
+software, and excluded upstream MCLRP materials are not covered by this licence.
+See `LICENSE` and `THIRD_PARTY.md`.
