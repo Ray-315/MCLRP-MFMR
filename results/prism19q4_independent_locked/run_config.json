@@ -1,0 +1,67 @@
+{
+  "bundle_dir": "C:\\Users\\Ray\\Desktop\\oup-authoring-template\\MCLRP_MFMR_SCI_Reproducibility_Package_20260718\\MCLRP_Python\\data\\standardized\\PRISM19Q4_independent",
+  "methods": [
+    "original_mclrp",
+    "imputer_only",
+    "ridge_only",
+    "mfmr_base",
+    "mfmr_mutation"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "split_seed": 20260906,
+  "test_fraction": 0.2,
+  "test_mask_sha256": "9596c32b7929534560d5e530f6309d49452fbeb6cd8538af52d7d61d633436e4",
+  "n_train": 9109,
+  "n_test": 2265,
+  "mfmr_config": {
+    "num_folds": 1,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "topg_imp": 2000,
+    "comp_imp": 12,
+    "topg_ridge": 2500,
+    "comp_ridge": 16,
+    "ridge_alpha": 10.0,
+    "weight_imp": 0.5,
+    "weight_ridge": 0.5,
+    "imputer_max_iter": 3,
+    "min_train_per_drug": 30,
+    "random_state": 42
+  },
+  "mutation_config": {
+    "enabled": true,
+    "final_alpha": 20.0,
+    "mutation_latent_dim": 24,
+    "residual_inner_cv": 5
+  },
+  "mclrp_config": {
+    "gene_limit": 1000,
+    "beta": 1.0,
+    "rho": 1.0,
+    "iter_num": 100,
+    "itol": 0.0,
+    "tk": 0.03,
+    "epsilon_scale": 1.0
+  }
+}
