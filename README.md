@@ -1,6 +1,6 @@
 # MCLRP-MFMR
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22008296.svg)](https://doi.org/10.5281/zenodo.22008296)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22531814.svg)](https://doi.org/10.5281/zenodo.22531814)
 
 Official reproducibility repository for:
 
@@ -100,9 +100,11 @@ The result archive contains materials such as:
 
 The archived results are provided through the corresponding GitHub Release, while the software release is permanently archived at Zenodo.
 
-**Result archive:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.0.1
+**Original nine-task result archive:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.0.1
 
-**Archived software version:** https://doi.org/10.5281/zenodo.22008296
+**Bioinformatics and PRISM release:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.1.0
+
+**Archived software version:** https://doi.org/10.5281/zenodo.22531814
 
 This separation keeps the Git repository focused on source code and reproducibility metadata while allowing the complete frozen numerical output to remain publicly accessible.
 

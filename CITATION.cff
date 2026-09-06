@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the associated MCLRP-MFMR manuscript."
 title: "MCLRP-MFMR: Fold-Specific Low-Rank Completion and Transcriptomic Fusion for Anticancer Drug-Response Interpolation"
 type: software
-version: 1.0.1
-doi: 10.5281/zenodo.22008296
+version: 1.1.0
+doi: 10.5281/zenodo.22531814
 license: MIT
 repository-code: "https://github.com/Ray-315/MCLRP-MFMR"
 authors:
