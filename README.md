@@ -106,6 +106,15 @@ The archived results are provided through the corresponding GitHub Release, whil
 
 This separation keeps the Git repository focused on source code and reproducibility metadata while allowing the complete frozen numerical output to remain publicly accessible.
 
+## PRISM 19Q4 independent test
+
+The repository also contains a locked independent T0 evaluation based on DepMap Public 19Q4 expression and mutation data together with PRISM Repurposing 19Q4 drug-response data. The upstream pharmacogenomic files are not redistributed.
+
+- Protocol and reproduction instructions: `docs/PRISM19Q4_INDEPENDENT.md`
+- Dataset manifest and selected-drug list: `data/manifests/PRISM19Q4-*`
+- Data-construction and benchmark scripts: `scripts/data/` and `scripts/benchmarks/`
+- Locked split, 50 prediction matrices, metrics, and paired bootstrap results: `results/prism19q4_independent_locked/`
+
 ## Data availability
 
 The upstream pharmacogenomic datasets are not redistributed in this repository.
