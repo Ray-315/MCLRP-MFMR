@@ -1,6 +1,6 @@
 # MCLRP-MFMR
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22008295.svg)](https://doi.org/10.5281/zenodo.22008295)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22594721.svg)](https://doi.org/10.5281/zenodo.22594721)
 
 Official reproducibility repository for:
 
@@ -102,9 +102,9 @@ The archived results are provided through the corresponding GitHub Release, whil
 
 **Original nine-task result archive:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.0.1
 
-**Bioinformatics and PRISM release:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.1.0
+**Bioinformatics, PRISM, and additional-experiment release:** https://github.com/Ray-315/MCLRP-MFMR/releases/tag/v1.2.0
 
-**Archived software version:** https://doi.org/10.5281/zenodo.22531814
+**Archived software version v1.2.0:** https://doi.org/10.5281/zenodo.22594721
 
 This separation keeps the Git repository focused on source code and reproducibility metadata while allowing the complete frozen numerical output to remain publicly accessible.
 
@@ -251,8 +251,8 @@ and held-out branch-complementarity analyses. See
 commands, and the boundary between public MFMR code and the separately obtained
 MCLRP comparator. Derived metric CSV files are available in
 `results/additional_experiments/`, and exact additional holdouts are in
-`splits/additional_experiments/`. This source update precedes a new versioned
-release; the existing DOI refers to the previously published archive.
+`splits/additional_experiments/`. These analyses are archived in version v1.2.0
+at https://doi.org/10.5281/zenodo.22594721.
 
 The project was designed around an explicit information boundary.
 

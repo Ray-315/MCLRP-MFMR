@@ -37,8 +37,10 @@ PRISM label arrays are stored as strings, with no pickle required.
 
 Full prediction caches are not tracked by this update. The archived CSV files
 can be inspected without upstream data; recomputation requires local datasets.
-Software version and DOI metadata continue to refer to the previous published
-release until a new release is created.
+The experiment code, CSV files, and masks are archived in software version
+v1.2.0, DOI https://doi.org/10.5281/zenodo.22594721. The subsequent metadata
+correction on the main branch identifies this archive; the published ZIP and
+release tag remain unchanged.
 
 ## Run from a source checkout
 
