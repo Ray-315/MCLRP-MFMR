@@ -1,0 +1,6 @@
+{
+  "experiment": "branch_complementarity",
+  "prediction_dir": "results/additional_experiments/adaptive_fusion/predictions",
+  "tolerance": 1e-06,
+  "prediction_source": "cached held-out arrays from adaptive_fusion; no model retraining"
+}

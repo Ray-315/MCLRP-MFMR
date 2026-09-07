@@ -51,7 +51,17 @@ temp/
 # Experimental results
 # Complete archived results are distributed separately through
 # a GitHub Release / Zenodo archive rather than tracked in Git.
-results/
+results/*
+!results/additional_experiments/
+results/additional_experiments/*
+!results/additional_experiments/summary.md
+!results/additional_experiments/adaptive_fusion/
+!results/additional_experiments/mask_sensitivity/
+!results/additional_experiments/branch_complementarity/
+results/additional_experiments/*/*
+!results/additional_experiments/*/*.csv
+!results/additional_experiments/*/config.json
+!results/additional_experiments/*/README.md
 outputs/
 runs/
 

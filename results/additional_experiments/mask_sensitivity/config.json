@@ -1,0 +1,295 @@
+{
+  "experiment": "mask_sensitivity",
+  "shards": [
+    {
+      "experiment": "mask_sensitivity",
+      "datasets": [
+        "CCLE"
+      ],
+      "ratios": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "methods": [
+        "original_mclrp",
+        "mfmr_base"
+      ],
+      "mask_definition": "fraction of originally observed nonzero response entries",
+      "min_train_per_row": 1,
+      "min_train_per_drug": 5,
+      "mfmr_config": {
+        "num_folds": 1,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "one constrained mask is shared by every method for each dataset-ratio-seed unit"
+    },
+    {
+      "experiment": "mask_sensitivity",
+      "datasets": [
+        "ERKAUC30"
+      ],
+      "ratios": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "methods": [
+        "original_mclrp",
+        "mfmr_base"
+      ],
+      "mask_definition": "fraction of originally observed nonzero response entries",
+      "min_train_per_row": 1,
+      "min_train_per_drug": 5,
+      "mfmr_config": {
+        "num_folds": 1,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "one constrained mask is shared by every method for each dataset-ratio-seed unit"
+    },
+    {
+      "experiment": "mask_sensitivity",
+      "datasets": [
+        "ERKIC50"
+      ],
+      "ratios": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "methods": [
+        "original_mclrp",
+        "mfmr_base"
+      ],
+      "mask_definition": "fraction of originally observed nonzero response entries",
+      "min_train_per_row": 1,
+      "min_train_per_drug": 5,
+      "mfmr_config": {
+        "num_folds": 1,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "one constrained mask is shared by every method for each dataset-ratio-seed unit"
+    },
+    {
+      "experiment": "mask_sensitivity",
+      "datasets": [
+        "PI3KAUC"
+      ],
+      "ratios": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "methods": [
+        "original_mclrp",
+        "mfmr_base"
+      ],
+      "mask_definition": "fraction of originally observed nonzero response entries",
+      "min_train_per_row": 1,
+      "min_train_per_drug": 5,
+      "mfmr_config": {
+        "num_folds": 1,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "one constrained mask is shared by every method for each dataset-ratio-seed unit"
+    },
+    {
+      "experiment": "mask_sensitivity",
+      "datasets": [
+        "PI3KIC50"
+      ],
+      "ratios": [
+        0.1,
+        0.15,
+        0.2,
+        0.25,
+        0.3
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "methods": [
+        "original_mclrp",
+        "mfmr_base"
+      ],
+      "mask_definition": "fraction of originally observed nonzero response entries",
+      "min_train_per_row": 1,
+      "min_train_per_drug": 5,
+      "mfmr_config": {
+        "num_folds": 1,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "one constrained mask is shared by every method for each dataset-ratio-seed unit"
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "experiment": "adaptive_fusion",
+  "shards": [
+    {
+      "experiment": "adaptive_fusion",
+      "datasets": [
+        "CCLE"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outer_folds": 10,
+      "inner_folds": 5,
+      "alpha_candidates": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "selection_metric": "mean inner-fold PCC",
+      "tie_break": "closest to 0.5, then lower alpha",
+      "mfmr_config": {
+        "num_folds": 10,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "alpha selected only from inner OOF predictions within each outer-training partition"
+    },
+    {
+      "experiment": "adaptive_fusion",
+      "datasets": [
+        "ERKAUC30"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outer_folds": 10,
+      "inner_folds": 5,
+      "alpha_candidates": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "selection_metric": "mean inner-fold PCC",
+      "tie_break": "closest to 0.5, then lower alpha",
+      "mfmr_config": {
+        "num_folds": 10,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "alpha selected only from inner OOF predictions within each outer-training partition"
+    },
+    {
+      "experiment": "adaptive_fusion",
+      "datasets": [
+        "ERKIC50"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outer_folds": 10,
+      "inner_folds": 5,
+      "alpha_candidates": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "selection_metric": "mean inner-fold PCC",
+      "tie_break": "closest to 0.5, then lower alpha",
+      "mfmr_config": {
+        "num_folds": 10,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "alpha selected only from inner OOF predictions within each outer-training partition"
+    },
+    {
+      "experiment": "adaptive_fusion",
+      "datasets": [
+        "PI3KAUC"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outer_folds": 10,
+      "inner_folds": 5,
+      "alpha_candidates": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "selection_metric": "mean inner-fold PCC",
+      "tie_break": "closest to 0.5, then lower alpha",
+      "mfmr_config": {
+        "num_folds": 10,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "alpha selected only from inner OOF predictions within each outer-training partition"
+    },
+    {
+      "experiment": "adaptive_fusion",
+      "datasets": [
+        "PI3KIC50"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outer_folds": 10,
+      "inner_folds": 5,
+      "alpha_candidates": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "selection_metric": "mean inner-fold PCC",
+      "tie_break": "closest to 0.5, then lower alpha",
+      "mfmr_config": {
+        "num_folds": 10,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "alpha selected only from inner OOF predictions within each outer-training partition"
+    },
+    {
+      "experiment": "adaptive_fusion",
+      "datasets": [
+        "PRISM19Q4_independent"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "outer_folds": 1,
+      "inner_folds": 5,
+      "alpha_candidates": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "selection_metric": "mean inner-fold PCC",
+      "tie_break": "closest to 0.5, then lower alpha",
+      "mfmr_config": {
+        "num_folds": 1,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "topg_imp": 2000,
+        "comp_imp": 12,
+        "topg_ridge": 2500,
+        "comp_ridge": 16,
+        "ridge_alpha": 10.0,
+        "weight_imp": 0.5,
+        "weight_ridge": 0.5,
+        "imputer_max_iter": 3,
+        "min_train_per_drug": 5,
+        "random_state": 42
+      },
+      "leakage_control": "alpha selected only from inner OOF predictions within each outer-training partition"
+    }
+  ]
+}

@@ -243,6 +243,17 @@ The complete numerical outputs for these analyses are distributed with the separ
 
 ## Reproducibility
 
+### Additional fusion and masking experiments
+
+The repository includes nested adaptive fusion, response-masking sensitivity,
+and held-out branch-complementarity analyses. See
+[the experiment guide](docs/ADDITIONAL_EXPERIMENTS.md) for frozen settings,
+commands, and the boundary between public MFMR code and the separately obtained
+MCLRP comparator. Derived metric CSV files are available in
+`results/additional_experiments/`, and exact additional holdouts are in
+`splits/additional_experiments/`. This source update precedes a new versioned
+release; the existing DOI refers to the previously published archive.
+
 The project was designed around an explicit information boundary.
 
 In particular, held-out responses are excluded before fold-dependent operations including:
